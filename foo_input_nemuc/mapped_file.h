@@ -67,6 +67,10 @@ class NOVTABLE mapped_file_impl_t : public mapped_file
 
 	void write(const void* p_buffer, t_size p_bytes, abort_callback& p_abort) override;
 
+	public:
+
+	FB2K_MAKE_SERVICE_INTERFACE(mapped_file_impl_t, mapped_file);
+
 	// impl members
 	private:
 
